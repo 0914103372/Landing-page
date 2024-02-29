@@ -148,8 +148,83 @@ function slider4(){
     })
    
 }
+function textslider (animatedElement) {
+
+function isInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+function animateIfVisible(){
+
+    if (isInViewport(animatedElement)) {
+      if (!animatedElement.classList.contains('animate')) {
+        // Chỉ thêm lớp animate nếu nó chưa có
+        animatedElement.classList.add('animate');
+      }
+    } 
+}
+window.addEventListener('scroll', animateIfVisible);
+document.addEventListener('DOMContentLoaded', animateIfVisible);
+}
+function imgtele(animatedElement,tele) {
+
+    function isInViewport(element) {
+      var rect = element.getBoundingClientRect();
+      return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+    }
+    function animateIfVisible(){
+    
+        if (isInViewport(animatedElement)) {
+          if (!animatedElement.classList.contains(tele)) {
+            animatedElement.classList.add(tele);
+          }
+        } 
+    }
+window.addEventListener('scroll', animateIfVisible);
+document.addEventListener('DOMContentLoaded', animateIfVisible);
+}
+var tsl1= document.querySelector('.textb4212')
+var tsl2=document.querySelector('.b4331')
+var tsl3=document.querySelector('.b4332')
+var tsl4=document.querySelector('.b442')
+var tsl5=document.querySelector('.b452')
+var tsl6=document.querySelector('.b454')
+var tsl7=document.querySelector('.b462')
+var tsl8=document.querySelector('.b53')
+var tsl9=document.querySelector('.b55')
+var tsl10=document.querySelector('.b712')
+var tsl11=document.querySelector('.b73')
+var tsl12=document.querySelector('.b743')
+var teleimg1=document.querySelector('.b721')
+var teleimg2=document.querySelector('.b722')
+let a = 'teler'
+let a1 ='telel'
 slider4()
+slider2()
 slider3()
 slider1()
-slider2()
+textslider(tsl1)
+textslider(tsl2)
+textslider(tsl3)
+textslider(tsl4)
+textslider(tsl5)
+textslider(tsl6)
+textslider(tsl7)
+textslider(tsl8)
+textslider(tsl9)
+textslider(tsl10)
+textslider(tsl11)
+textslider(tsl12)
+imgtele(teleimg1,a)
+imgtele(teleimg2,a1)
 

@@ -63,7 +63,10 @@
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
 }
-
+span{
+    display: inline;
+    color: white;
+}
 @keyframes slide{
     from{
         transform: translateY(50px);
@@ -402,6 +405,7 @@ body {
     font-size: 28px ;
     font-weight: 600;
     display: flex;
+    color: #86868b;
 
 }
 .textb42211{
@@ -608,6 +612,7 @@ body {
     margin-top: 50px;
     font-size: 21px;
     font-weight: 600;
+    color: #86868b;
 }
 .b4331{
     display: flex;
@@ -620,11 +625,13 @@ body {
     width: 327px;
     display: flex;
     flex-wrap: wrap;
+    line-height: 1.381002381;
 }
 .b43322{
     width: 327px;
     display: flex;
     flex-wrap: wrap;
+    line-height: 1.381002381;
 }
 .b4332{
     margin-top: 50px;
@@ -657,6 +664,7 @@ body {
     margin-top: 80px;
     width: 60%;
     opacity: 0;
+    color: #86868b;
 }
 .b443{
     width: 70%;
@@ -691,6 +699,7 @@ body {
     font-size: 21px;
     margin-top: 50px;
     opacity: 0;
+    color: #86868b;
 }
 .b453{
     width: 100%;
